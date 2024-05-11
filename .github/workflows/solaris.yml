@@ -2,6 +2,9 @@ name: Solaris
 
 on: [push]
 
+env:
+  LANG: C
+
 jobs:
   solaris:
     runs-on: ubuntu-latest
