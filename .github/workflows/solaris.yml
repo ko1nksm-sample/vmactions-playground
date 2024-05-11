@@ -15,4 +15,5 @@ jobs:
           ls -lah
           whoami
           env
+          locale
           /usr/xpg4/bin/sh -c 'echo abc'
