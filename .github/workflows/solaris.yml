@@ -1,0 +1,18 @@
+name: Solaris
+
+on: [push]
+
+jobs:
+  solaris:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: vmactions/solaris-vm@v1
+      with:
+        usesh: true
+        run: |
+          pwd
+          ls -lah
+          whoami
+          env
+          /usr/xpg4/bin/sh -c 'echo abc'
