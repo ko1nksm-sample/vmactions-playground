@@ -16,4 +16,4 @@ jobs:
           whoami
           env
           locale
-          /usr/xpg4/bin/sh -c 'echo abc'
+          /usr/xpg4/bin/sh -c 'export LC_ALL=C; echo 1 abc | sort -k 1 -n -r'
